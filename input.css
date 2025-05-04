@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any custom base styles from your <style type="text/tailwindcss"> block here */
+body {
+    /* Style applied via class, keep JS for padding-top */
+    @apply transition-colors duration-300 antialiased;
+}
+.sortable-ghost {
+    @apply opacity-40 bg-blue-200 dark:bg-blue-800 rounded-lg;
+}
+.sortable-chosen {
+    @apply cursor-grabbing;
+}
+/* ... include other custom styles like .spinner, .search-highlight, etc. ... */
+/* Remove @apply lines if they were only for Tailwind config before */
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-left-color: #fff; /* Or use a Tailwind color variable if set up */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-right: 1rem; /* Equivalent to mr-4 */
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.hidden { display: none !important; }
+.search-highlight { @apply bg-yellow-300 dark:bg-yellow-500 text-black px-1 rounded; }
+.prompt-card.card-text-match { @apply ring-2 ring-offset-2 ring-indigo-500 dark:ring-indigo-400 ring-offset-white dark:ring-offset-gray-800; }
+.prompt-card.unsaved { @apply border-l-4 border-yellow-400 dark:border-yellow-500 pl-3 bg-yellow-50 dark:bg-yellow-900/20; }
+.prompt-card-overlay, .prompt-card-overlay * { cursor: default !important; }
