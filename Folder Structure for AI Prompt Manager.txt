@@ -1,0 +1,29 @@
+/Your-Project-Folder/
+|-- index.html = ok
+|-- cc/styles.css = ok 
+|-- js/
+|   |-- main.js = ok
+|   |-- state.js = ok
+|   |-- storage.js = ok
+|   |-- ui/
+|   |   |-- card.js = ok
+|   |   |-- modal.js = ok
+|   |   |-- notifications.js = ok
+|   |   |-- overlay.js = ok
+|   |   |-- rendering.js = ok
+|   |-- features/
+|   |   |-- categories.js = ok
+|   |   |-- darkMode.js = ok
+|   |   |-- importExport.js = ok
+|   |   |-- search.js = ok
+|   |   |-- sortable.js = ok
+|   |   |-- undoRedo.js = ok
+|   |   |-- versioning.js = ok
+|   |-- utils/
+|       |-- constants.js = ok
+|       |-- helpers.js = ok
+|-- sw.js = ok
+|-- pwa.js = ok 
+|-- manifest.json = ok
+|-- icons/ = ok
+|-- favicon.ico = ok

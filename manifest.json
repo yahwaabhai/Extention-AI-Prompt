@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Prompt Manager",
+  "version": "1.0",
+  "description": "Manage and organize your AI prompts efficiently.",
+  "permissions": [
+    "storage",        // For saving prompts/settings via chrome.storage
+    "downloads",      // For exporting prompts via chrome.downloads
+    "clipboardWrite"  // For 'copy' button and share fallback via navigator.clipboard
+  ],
+  "action": {
+    "default_popup": "index.html", // Main UI file
+    "default_icon": {             // Icons for the toolbar
+      "16": "icons/icon-192x192.png",
+      "48": "icons/icon-192x192.png",
+      "128": "icons/icon-512x512.png"
+    }
+  },
+  "icons": {                      // Icons for chrome://extensions page
+    "16": "icons/icon-192x192.png",
+    "48": "icons/icon-192x192.png",
+    "128": "icons/icon-512x512.png"
+  }
+}
